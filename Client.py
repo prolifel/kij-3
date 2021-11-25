@@ -41,9 +41,9 @@ key = key_gen.randStr(N=8) #des key
 
 
 e, d, N = rsa.genereateKeys(5)
-keypath = os.getcwd() + '\\key\\'
+keypath = os.getcwd() + '/key/'
 if not os.path.exists(keypath):
-    os.mkdir(os.getcwd() + '\\key\\')
+    os.mkdir(os.getcwd() + '/key/')
 key_folder = os.listdir(keypath)
 f = open(keypath+sys.argv[1]+'.txt', 'w+')
 f.write(str(e)+" "+str(N))
